@@ -34,7 +34,7 @@ export class Provider extends Component {
     }
 
     componentDidMount(){
-        axios.get('http://jsonplaceholder.typicode.com/users',{
+        axios.get('https://jsonplaceholder.typicode.com/users',{
             headers: {
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*' 
