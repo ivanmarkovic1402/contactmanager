@@ -34,7 +34,7 @@ export class Provider extends Component {
     }
 
     componentDidMount(){
-        axios.get('https://cors-anywhere.herokuapp.com/http://jsonplaceholder.typicode.com/users',{
+        axios.get('http://jsonplaceholder.typicode.com/users',{
             headers: {
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*' 
