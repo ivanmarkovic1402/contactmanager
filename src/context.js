@@ -34,7 +34,7 @@ export class Provider extends Component {
     }
 
     componentDidMount(){
-        axios.get('https://cors-anywhere.herokuapp.com/https://jsonplaceholder.typicode.com/users')
+        axios.get('https://cors-anywhere.herokuapp.com/http://jsonplaceholder.typicode.com/users')
             .then(res => this.setState({ contacts:res.data}))
             .catch(err => console.log(err));
     }
