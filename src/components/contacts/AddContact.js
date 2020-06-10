@@ -41,7 +41,8 @@ class AddContact extends Component {
              phone
          };
 
-         axios.post('https://jsonplaceholder.typicode.com/users', newContact,{
+         axios.post('https://jsonplaceholder.typicode.com/users', {
+            newContact,
             headers: {
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*' 

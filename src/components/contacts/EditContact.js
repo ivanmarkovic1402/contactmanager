@@ -56,7 +56,8 @@ class EditContact extends Component {
 
         const { id } = this.props.match.params;
 
-        axios.put(`https://jsonplaceholder.typicode.com/users/${id}`, updContact, {
+        axios.put(`https://jsonplaceholder.typicode.com/users/${id}`, {
+            updContact,
             headers: {
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*' 
